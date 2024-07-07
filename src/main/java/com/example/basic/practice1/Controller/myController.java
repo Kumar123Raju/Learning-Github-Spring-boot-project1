@@ -27,6 +27,7 @@ public class myController {
         if(myservice.bussinessValidate(mydto)){
             return new ResponseEntity<>(mydto, HttpStatus.CREATED);
         }
+        System.out.println("There is may be some issue with the code or with given data");
 
         return new ResponseEntity<>(mydto,HttpStatus.CREATED);
 
