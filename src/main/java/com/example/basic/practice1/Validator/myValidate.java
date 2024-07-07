@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 public class myValidate {
 
     public boolean validate(myDto mydto){
-           if(mydto.getName().equals("India")) return true;
+           if(mydto.getName().isBlank() && mydto.getName().isEmpty()) return true;
            else return false;
     }
 
